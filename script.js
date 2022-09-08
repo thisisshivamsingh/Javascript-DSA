@@ -27,3 +27,5 @@ function countTrue(arr) {
   }
   return counter;
 }
+
+console.log(countTrue([2, 0, 5, 5, 6]));
