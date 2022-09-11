@@ -18,16 +18,14 @@
 
 ////////// How Much is True? //////////
 
-// function countTrue(arr) {
-//   let counter = 0;
-//   for (const elem of arr) {
-//     if (elem) {
-//       counter++;
-//     }
-//   }
-//   return counter;
-// }
+function countTrue(arr) {
+  let counter = 0;
+  for (const elem of arr) {
+    if (elem) {
+      counter++;
+    }
+  }
+  return counter;
+}
 
-// console.log(countTrue([2, 0, 5, 5, 6]));
-
-
+console.log(countTrue([2, 0, 5, 5, 6]));
