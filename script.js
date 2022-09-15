@@ -18,14 +18,30 @@
 
 ////////// How Much is True? //////////
 
-function countTrue(arr) {
-  let counter = 0;
-  for (const elem of arr) {
-    if (elem) {
-      counter++;
+// function countTrue(arr) {
+//   let counter = 0;
+//   for (const elem of arr) {
+//     if (elem) {
+//       counter++;
+//     }
+//   }
+//   return counter;
+// }
+
+// console.log(countTrue([2, 0, 5, 5, 6]));
+
+////////// What's Hiding Amongst the Crowd? //////////
+
+function detectWord(str) {
+  const convtArr = str.split("");
+  const convtCaseChangedArr = str.toUpperCase().split("");
+  let newStr = "";
+  for (const i in convtCaseChangedArr) {
+    if (convtArr[i] !== convtCaseChangedArr[i]) {
+      newStr += convtArr[i];
     }
   }
-  return counter;
+  return newStr;
 }
 
-console.log(countTrue([2, 0, 5, 5, 6]));
+console.log(detectWord("UcUNFYGaFYFYGtNUH"));
